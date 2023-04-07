@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="UTF-8">
+    <title>university website</title>
+   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="/eduford_img/logo.png" alt=""></a>
+            <div class="nav-links" id="nav-links">
+               <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="/course.html">COURSE</a></li>
+                    <li><a href="/blog.html">BLOG</a></li>
+                    <li><a class="active" href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" id="b1" onclick="showmenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    
+    </section>
+
+<!---- contact us ---->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3232.933073576373!2d50.96796181479291!3d35.87515692692023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8db927847c1acd%3A0x35458dafcf6bbb6d!2sAlborz%20Province%2C%20Karaj%2C%20Baghestan%2C%20Golestan%2018%20St%2C%20Iran!5e0!3m2!1sen!2s!4v1634036263356!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>XYZ Road, ABC Bulding</h5>
+                    <p>bangalore, Karnataka, IN</p>
+                </span>
+            </div>
+             <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+1 0123456789</h5>
+                    <p>Monday to saturday, 10AM to 6PM</p>
+                </span>
+            </div>
+             <div>
+                <i class="fa fa-envelope"></i>
+                <span>
+                    <h5>info@gmail.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+        
+        <form action="form-handeler.php" method="post">
+            <input type="text"  name="name" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter email address" required>
+            <input type="text" name="subject" placeholder="Enter your subject" required>
+            <textarea rows="8" name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="btn-hero red-btn">Send Message</button>
+        </form>
+        
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!---- Footer ---->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum sit amet, Consectetur adipising elit.Lorem ipsum sit amet, Consectetur adipising elit . <br>Lorem ipsum sit amet, Consectetur adipising elit.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by sina moshref</p>
+</section>
+
+
+<!-------JavaScript for toggle menu------->
+<script>
+    var navlinks = document.getElementById("nav-links");
+    function showmenu(){
+        navlinks.style.display = "block";
+        navlinks.style.right = "0";
+        document.getElementById("b1").style.opacity= "0"
+    }
+    function hidemenu(){
+        navlinks.style.right = "-200px"; document.getElementById("b1").style.opacity= "1";
+         document.getElementById("b1").style.transition = "2s";
+    }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
